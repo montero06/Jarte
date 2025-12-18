@@ -2,7 +2,7 @@ package com.example.jarte;
 
 import be.tarsos.dsp.AudioDispatcher;
 
-import be.tarsos.*;
+
 import be.tarsos.dsp.io.jvm.AudioDispatcherFactory;
 import be.tarsos.dsp.pitch.PitchDetectionHandler;
 import be.tarsos.dsp.pitch.PitchProcessor;
