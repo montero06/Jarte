@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.jarte"
-        minSdk = 29
+        minSdk = 30
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -26,10 +26,15 @@ android {
         }
     }
     compileOptions {
+        // ACTUALIZACIÓN: Es mejor usar una versión más moderna como la 17, 
+        // pero la 11 debería funcionar. Si sigues con problemas, cambia esto a VERSION_17.
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
 }
+
+
 
 dependencies {
 
@@ -40,4 +45,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Dependencia de TarsosDSP
+    implementation("be.tarsos.dsp:core:2.5")
+    implementation("be.tarsos.dsp:jvm:2.5")
 }
